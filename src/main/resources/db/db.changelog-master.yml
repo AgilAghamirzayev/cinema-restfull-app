@@ -1,0 +1,9 @@
+databaseChangeLog:
+  - include:
+      file: db/changelog/01-create-tables.sql
+  - include:
+      file: db/changelog/02-insert-cinemas-halls-seats.sql
+  - include:
+      file: db/changelog/03-insert-movies-sessions.sql
+  - include:
+      file: db/changelog/04-insert-user-token-ticket.sql

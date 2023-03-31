@@ -1,0 +1,7 @@
+version: "3.8"
+
+services:
+  cinema:
+    image: aqilzeka/cinema-rest-app:0.0.1.RELEASE
+    ports:
+      - "8080:8080"

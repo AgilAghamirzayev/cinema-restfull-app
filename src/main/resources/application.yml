@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:mydb
+    username: sa
+    password: password
+    driver-class-name: org.h2.Driver
+  h2:
+    console:
+      enabled: true
+      settings:
+        web-allow-others: true
+
+  liquibase:
+    change-log: classpath:/db/db.changelog-master.yml
+  jpa:
+    open-in-view: false
+
+token:
+  create:
+    secret-key: 4A404E635266546A576E5A7234753778214125442A472D4B6150645367566B58703273357638792F423F4528482B4D6251655468576D5A7133743677397A2443
+    expires-days: 1
+  refresh:
+    salt: refresh
+    expires-days: 30
